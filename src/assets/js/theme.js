@@ -1,7 +1,7 @@
 ;(function($){
     "use strict"
 	
-    console.log("theme js loading",); 
+
     var nav_offset_top = $('header').height() + 50; 
     /*-------------------------------------------------------------------------------
 	  Navbar 

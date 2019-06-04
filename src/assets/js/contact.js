@@ -10,7 +10,9 @@ $(document).ready(function(){
 
     // validate contactForm form
     $(function() {
+
         $('#contactForm').validate({
+            
             rules: {
                 name: {
                     required: true,
@@ -33,6 +35,7 @@ $(document).ready(function(){
                     minlength: 20
                 }
             },
+         
             messages: {
                 name: {
                     required: "come on, you have a name, don't you?",
@@ -55,11 +58,13 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
+
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    // url:"contact_process.php",
                     success: function() {
+
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $(this).find(':input').attr('disabled', 'disabled');
@@ -70,6 +75,7 @@ $(document).ready(function(){
                         })
                     },
                     error: function() {
+
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $('#error').fadeIn()
                             $('.modal').modal('hide');

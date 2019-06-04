@@ -7,9 +7,10 @@ import {AppCommonModule} from './../app-common/app-common.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 @NgModule({
-  declarations: [HomePageComponent, LandingPageComponent, BlogComponent, ContactUsComponent],
+  declarations: [HomePageComponent, LandingPageComponent, BlogComponent, ContactUsComponent, BlogDetailsComponent],
   imports: [
     CommonModule,
     HomePageRoutingModule,
