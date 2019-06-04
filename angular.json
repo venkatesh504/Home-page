@@ -27,9 +27,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./src/assets/scss/style.scss",
+              "./src/assets/css/responsive.css",
+              "./src/assets/css/bootstrap.css",
+              "./src/assets/vendors/linericon/style.css",
+              "./src/assets/css/font-awesome.min.css",
+              "./src/assets/vendors/owl-carousel/owl.carousel.min.css",
+              "./src/assets/vendors/lightbox/simpleLightbox.css",
+              "./src/assets/vendors/nice-select/css/nice-select.css",
+              "./src/assets/vendors/animate-css/animate.css",
+              "./src/assets/vendors/flaticon/flaticon.css"
             ],
-            "scripts": [],
+          "scripts": [
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
