@@ -146,7 +146,7 @@
     /*  Testimonials Slider
     /*----------------------------------------------------*/
     function testimonials_slider(){
-        if ( $('.testi_slider').length ){
+        // if ( $('.testi_slider').length ){
             $('.testi_slider').owlCarousel({
                 loop:true,
                 margin: 30,
@@ -165,39 +165,10 @@
                     },
                 }
             })
-        }
+            // }
+            console.log("entered theme");
     }
     testimonials_slider();
-	
-	
-	/*----------------------------------------------------*/
-    /*  Testimonials Slider
-    /*----------------------------------------------------*/
-//    function testimonials_slider(){
-//        if ( $('.testi_slider').length ){
-//            $('.testi_slider').owlCarousel({
-//                loop:true,
-//                margin: 30,
-//                items: 2,
-//                nav: true,
-//                autoplay: false,
-//                smartSpeed: 1500,
-//                dots:true, 
-//				navContainer: '.testimonials_area',
-//                navText: ['<i class="lnr lnr-arrow-up"></i>','<i class="lnr lnr-arrow-down"></i>'],
-//                responsiveClass: true,
-//                responsive: {
-//                    0: {
-//                        items: 1,
-//                    },
-//                    768: {
-//                        items: 2,
-//                    },
-//                }
-//            })
-//        }
-//    }
-//    testimonials_slider();
 	
 	
 	/*----------------------------------------------------*/

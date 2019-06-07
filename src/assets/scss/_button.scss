@@ -90,7 +90,8 @@
 	background: rgba(255, 255, 255, .10);
 	color: #fff;
 	font-family: $rob;
-	width: 134px;
+	// width: 134px;
+	padding: 0 20px;
 	font-size: 14px;
 	font-weight: 500;
 	border: 1px solid rgba(255, 255, 255, .50);
@@ -112,8 +113,9 @@
 	background: rgba(255, 255, 255, 1);
 	color: $dip;
 	font-family: $rob;
-	width: 134px;
-	font-size: 14px;
+	// width: 134px;
+	padding: 0 20px;
+		font-size: 14px;
 	font-weight: 500;
 	border: 1px solid rgba(255, 255, 255, .50);
 	line-height: 48px;

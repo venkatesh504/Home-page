@@ -2,17 +2,17 @@
 ============================================================================================ */
 .home_banner_area{
 	z-index: 1;
-	background-image: linear-gradient( 0deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
-	background-image: -moz-linear-gradient( 0deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
-	background-image: -webkit-linear-gradient( 0deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
-	background-image: -ms-linear-gradient( 0deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
+	background-image: linear-gradient( 70deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
+	background-image: -moz-linear-gradient( 70deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
+	background-image: -webkit-linear-gradient( 70deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
+	background-image: -ms-linear-gradient( 70deg, rgb(77,171,255) 0%, rgb(98,221,255) 100%);
 	.banner_inner{
 		width: 100%;
 		.home_left_img{
-			padding-top: 230px;
-			padding-bottom: 230px;
+			padding-top: 180px;
+			padding-bottom: 180px;
 		}
-		.col-lg-5{
+		.col-lg-6{
 			vertical-align: middle;
 			align-self: center;
 		}
@@ -28,6 +28,7 @@
 				margin-bottom: 20px;
 			}
 			p{
+				font-size: 16px;
 				color: #fff;
 				font-family: $rob;
 				margin-bottom: 35px;

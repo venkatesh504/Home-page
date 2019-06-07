@@ -240,8 +240,8 @@
 	/* End End Footer Area css
 	============================================================================================ */
 	.made_life_inner .nav.nav-tabs li {
-		flex: 0 0 50%;
-		max-width: 50%;
+		flex: 0 0 30%;
+		max-width: 30%;
 		margin-bottom: 15px;
 	}
 	.made_life_inner .nav.nav-tabs {

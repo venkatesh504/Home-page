@@ -7,10 +7,10 @@ $(document).ready(function(){
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
-
+console.log("entered log contact");
     // validate contactForm form
     $(function() {
-
+        console.log("entered log contact");
         $('#contactForm').validate({
             
             rules: {
@@ -58,13 +58,13 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
-
+                console.log("entered log contact",form);
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
                     // url:"contact_process.php",
                     success: function() {
-
+                        console.log("entered log contact success");
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $(this).find(':input').attr('disabled', 'disabled');
@@ -75,7 +75,7 @@ $(document).ready(function(){
                         })
                     },
                     error: function() {
-
+                        console.log("entered log contact error");
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $('#error').fadeIn()
                             $('.modal').modal('hide');

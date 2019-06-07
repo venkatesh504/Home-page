@@ -5,6 +5,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
 {path:'',component:HomePageComponent,
@@ -13,7 +14,8 @@ children:[
 {path:'landing-page',component:LandingPageComponent},
 {path:'blog',component:BlogComponent},
 {path:'contact-us',component:ContactUsComponent},
-{path:'blog-details',component:BlogDetailsComponent}
+{path:'blog-details',component:BlogDetailsComponent},
+{path:'pricing',component:PricingComponent}
 ]
 },
 ];
