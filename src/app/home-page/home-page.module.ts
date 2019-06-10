@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomePageComponent } from './home-page.component';
@@ -15,7 +16,8 @@ import { PricingComponent } from './pricing/pricing.component';
   imports: [
     CommonModule,
     HomePageRoutingModule,
-    AppCommonModule
+    AppCommonModule,
+    ReactiveFormsModule
   ]
 })
 export class HomePageModule { }

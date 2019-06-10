@@ -47,21 +47,35 @@
               </div>
           </div>
           <div class="col-lg-9">
-              <form class="row contact_form" method="post" id="contactForm" novalidate="novalidate">
+                <form class="row contact_form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+             
                   <div class="col-md-6">
                       <div class="form-group">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                          <input type="text"  formControlName="firstName" class="form-control" id="name" name="name" placeholder="Enter your name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                          <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                            </div>
                       </div>
                       <div class="form-group">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                          <input type="email" formControlName="email" class="form-control" id="email" name="email" placeholder="Enter email address" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
                       </div>
                       <div class="form-group">
-                          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                          <input type="text" formControlName="subject" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                          <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                            <div *ngIf="f.subject.errors.required">First Name is required</div>
+                        </div>
                       </div>
                   </div>
                   <div class="col-md-6">
                       <div class="form-group">
-                          <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                          <textarea class="form-control" formControlName="message" name="message" id="message" rows="1" placeholder="Enter Message"[ngClass]="{ 'is-invalid': submitted && f.email.errors }" /></textarea>
+                          <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                            <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                        </div>
                       </div>
                   </div>
                   <div class="col-md-12 text-right">
