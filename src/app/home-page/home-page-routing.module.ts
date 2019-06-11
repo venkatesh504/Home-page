@@ -8,16 +8,16 @@ import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
-{path:'',component:HomePageComponent,
-children:[ 
-{path:'',redirectTo:'landing-page',pathMatch:'full'},
-{path:'landing-page',component:LandingPageComponent},
-{path:'blog',component:BlogComponent},
-{path:'contact-us',component:ContactUsComponent},
-{path:'blog-details',component:BlogDetailsComponent},
-{path:'pricing',component:PricingComponent}
-]
-},
+  {
+    path: '', component: HomePageComponent,
+    children: [
+      { path: '', component: LandingPageComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'contact-us', component: ContactUsComponent },
+      { path: 'blog-details', component: BlogDetailsComponent },
+      { path: 'pricing', component: PricingComponent }
+    ]
+  },
 ];
 
 @NgModule({
