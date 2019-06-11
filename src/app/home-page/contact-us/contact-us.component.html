@@ -53,7 +53,7 @@
                       <div class="form-group">
                           <input type="text"  formControlName="firstName" class="form-control" id="name" name="name" placeholder="Enter your name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
                           <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-                                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                                <div *ngIf="f.firstName.errors.required">come on, you have a name, don't you?</div>
                             </div>
                       </div>
                       <div class="form-group">
@@ -64,17 +64,17 @@
                         </div>
                       </div>
                       <div class="form-group">
-                          <input type="text" formControlName="subject" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                          <input type="text" formControlName="subject" class="form-control" id="subject" name="subject" placeholder="Enter Subject"[ngClass]="{ 'is-invalid': submitted && f.subject.errors }" />
                           <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
-                            <div *ngIf="f.subject.errors.required">First Name is required</div>
+                            <div *ngIf="f.subject.errors.required">come on, you have a subject, don't you?</div>
                         </div>
                       </div>
                   </div>
                   <div class="col-md-6">
                       <div class="form-group">
-                          <textarea class="form-control" formControlName="message" name="message" id="message" rows="1" placeholder="Enter Message"[ngClass]="{ 'is-invalid': submitted && f.email.errors }" /></textarea>
+                          <textarea class="form-control" formControlName="message" name="message" id="message" rows="1" placeholder="Enter Message"[ngClass]="{ 'is-invalid': submitted && f.message.errors }" ></textarea>
                           <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                            <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                            <div *ngIf="f.message.errors.required">First Name is required</div>
                         </div>
                       </div>
                   </div>

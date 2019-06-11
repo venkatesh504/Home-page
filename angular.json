@@ -35,7 +35,7 @@
               "./src/assets/vendors/nice-select/css/nice-select.css",
               "./src/assets/vendors/animate-css/animate.css",
               "./src/assets/vendors/flaticon/flaticon.css",
-              "src/styles.scss",
+              "./src/styles.scss",
               "./src/assets/scss/style.scss",
               "./src/assets/css/responsive.css"
             ],

@@ -16,7 +16,7 @@ export class ContactUsComponent implements OnInit {
       firstName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
-      message: ['',[Validators.required, Validators.minLength(10)]]],
+      message: ['', [Validators.required, Validators.minLength(10)]]
   });
   }
   get f() { return this.registerForm.controls; }
